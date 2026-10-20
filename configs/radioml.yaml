@@ -1,0 +1,21 @@
+data:
+  raw_path: "data/raw/RML2016.10a_dict.pkl"
+  train_split: 0.8
+  batch_size: 256
+  num_workers: 0
+
+model:
+  name: "Conv1DAMCNet"
+  in_channels: 4
+  sequence_length: 128
+  num_classes: 11
+  dropout: 0.3
+
+training:
+  seed: 42
+  cpu_threads: 6
+  epochs: 30
+  lr: 0.001
+  weight_decay: 0.0001
+  device: "cuda"
+  checkpoint_dir: "checkpoints"

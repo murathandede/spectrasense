@@ -1,0 +1,42 @@
+﻿# Python environments and caches
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+*.venv
+venv/
+env/
+
+# Model weights
+*.pt
+*.pth
+checkpoints/*
+!checkpoints/.gitkeep
+
+# Local datasets (including archive (1).zip and RML2016.10a_dict.pkl)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+*.pkl
+*.h5
+*.mat
+*.tar.gz
+*.dat
+
+# Local predictions and run logs; publish plots and summary metrics
+results/predictions.npz
+results/*.log
+!results/accuracy_vs_snr.png
+!results/confusion_matrix.png
+!results/metrics.json
+!results/.gitkeep
+.ipynb_checkpoints/
+
+# Editor settings and local credentials
+.vscode/
+.idea/
+.DS_Store
+.env
+.env.*
+!.env.example
